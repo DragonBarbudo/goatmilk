@@ -1,0 +1,42 @@
+mixin head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css")
+  link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+  link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Montserrat:400,500,700")
+  link(rel="stylesheet" href="app/app.css")
+    
+    
+    
+
+mixin scripts
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+  script(src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js")
+  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js")
+  script(src="app/app.js")
+
+
+
+
+mixin topbar
+  .topbar: .container: .level
+    .level-left.animated.fadeInLeft
+      .level-item.has-text-centered
+        img(src="app/img/goat-milk.png" alt="Goat Milk")
+    .level-right
+      a(href="#inicio").level-item GOAT MILK
+      a(href="#nature-moments").level-item NATURE MOMENTS
+
+
+mixin footer
+  footer
+    .section.container
+      .columns
+        .column
+          a(href="#") Términos y condiciones
+          |  | 
+          a(href="#") Contáctanos
+          |  | 
+          a(href="#") About

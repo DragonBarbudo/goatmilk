@@ -1,0 +1,159 @@
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+  .nod {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1023px), only screen and (max-width: 769px) {
+  .not {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .nom {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1023px), only screen and (max-width: 769px) {
+  .onlyd {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1024px), only screen and (max-width: 769px) {
+  .onlyt {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 770px) and (max-width: 1023px), only screen and (min-width: 1024px) {
+  .onlym {
+    display: none !important;
+  }
+}
+/* ####################################################### */
+.font {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+/* SITE ########################################################## */
+.topbar {
+  background: #ffffff;
+  font-size: 0.8rem;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+.topbar a {
+  color: #000;
+  margin: 0 24px;
+}
+#inicio {
+  background-image: url(img/goat-milk-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+}
+#inicio p {
+  font-weight: 400;
+}
+#inicio .bodylotion {
+  margin-left: -40px;
+}
+#nature-moments h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+#nature-moments p {
+  font-weight: 400;
+}
+#nature-moments .ico {
+  margin: 20px auto;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#todas-las-edades h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#todas-las-edades h3 {
+  font-weight: 500;
+  margin: 4px 0;
+}
+#todas-las-edades p {
+  font-weight: 400;
+  margin: 20px 0;
+}
+#body-lotion h2 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+#body-lotion h2 strong {
+  color: #000;
+  font-weight: 700;
+}
+#body-lotion h3 {
+  font-weight: 500;
+  margin: 10px 0;
+}
+#body-lotion p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+#body-lotion .mindesc {
+  align-items: center;
+}
+#body-lotion .mindesc .percent {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+#body-lotion .mindesc p.desc {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+#body-lotion .mindesc p.small {
+  font-size: 0.6rem;
+}
+#body-lotion .mindesc .brd {
+  width: 1px !important;
+  height: 40px;
+  background: #000;
+}
+footer {
+  background: #F5F5F5;
+  font-weight: lighter;
+}
+footer .section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+footer a {
+  color: #000;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+@media only screen and (min-width: 770px) and (max-width: 1023px) {
+  #body-lotion .mindesc .percent {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 769px) {
+  #nature-moments .ico {
+    width: 80px;
+    height: 80px;
+  }
+  .introtxt {
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,151 @@
+@import "_mediaqueries";
+
+@b    : #000;
+@w    : #ffffff;
+@g    : #F5F5F5;
+
+.font{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{.font;   font-weight: 500; color:@b;}
+
+
+
+
+
+
+
+/* SITE ########################################################## */
+.topbar{
+  background: @w;
+  font-size: 0.8rem;
+  padding: 20px 0;
+  a{color:@b; margin: 0 24px;}
+  font-size: 1rem;
+}
+
+
+
+#inicio{
+  background-image: url(img/goat-milk-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  p{font-weight: 400;}
+  .bodylotion{
+    margin-left: -40px;
+  }
+}
+
+
+
+
+
+
+#nature-moments{
+  h2{
+    font-weight: bold; font-size: 1.4rem;
+  }
+  p{
+    font-weight: 400;
+  }
+  .ico{
+    margin: 20px auto;
+    @sz: 120px;
+    width:@sz;
+    height: @sz;
+    border: 1px solid @b;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+#todas-las-edades{
+  h2{
+    font-weight: bold; font-size: 1.2rem;
+  }
+  h3{
+    font-weight: 500;
+    margin: 4px 0;
+  }
+  p{
+    font-weight: 400;
+    margin: 20px 0;
+  }
+}
+
+
+#body-lotion{
+  h2{
+    font-weight: 400; font-size: 2.2rem;
+    strong{color:@b; font-weight: 700;}
+    line-height: 1.4;
+  }
+  h3{
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 20px 0;
+  }
+  .mindesc{
+    align-items: center;
+    .percent{font-size: 2.6rem; font-weight: 500;}
+    p.desc{ font-size: 0.8rem; font-weight: lighter;}
+    p.small{ font-size: 0.6rem;}
+    .brd{
+      width: 1px !important;
+      height: 40px;
+      background: @b;
+    }
+
+  }
+}
+
+
+
+footer{
+  background: @g;
+  font-weight: lighter;
+  .section{padding-top: 0; padding-bottom: 0;}
+  a{
+    color:@b;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    display: inline-block;
+
+  }
+}
+
+
+
+@media @tablet{
+  #body-lotion{
+    .mindesc{
+      .percent{
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+
+@media @mobile{
+  #nature-moments{
+    .ico{
+      @sz: 80px;
+      width:@sz;
+      height: @sz;
+    }
+  }
+  .introtxt{
+    margin-top: 100px;
+  }
+}
