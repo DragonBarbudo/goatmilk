@@ -8,47 +8,57 @@ html(lang="es")
   body
     +topbar
 
-    section#inicio.animated.fadeIn
+    section#inicio(data-aos="zoom-in" data-aos-duration="1400")
       .container
         .columns
-          .column.is-4.is-offset-1.is-6-mobile.animated.fadeInLeft
+          .column.is-4.is-offset-1.is-6-mobile(data-aos="fade-right" data-aos-duration="600" data-aos-delay="800")
             p.section.is-size-5.introtxt LA LECHE DE CABRA ES EL INGREDIENTE IDEAL PARA CUIDAR LA #[strong BELLEZA DE TU PIEL]
         .columns
-          .column.is-8.animated.fadeInRight
+          .column.is-8(data-aos="fade-left" data-aos-duration="600" data-aos-delay="800")
             img(src="app/img/goat-milk-lotion.png" alt="Ultra Hydrating Body Lotion").bodylotion
     
-    section#nature-moments.animated.fadeIn
+    section#nature-moments(data-aos="zoom-in" data-aos-duration="800")
       .container
         .columns: .column.has-text-centered
           h2 NATURE MOMENTS GOAT MILK
           p ¿Conoces los beneficios de la leche de cabra?
       .section.container
         .columns.has-text-centered.is-mobile.is-multiline
-          .column.is-4-mobile: div.ico: img(src="app/img/ico-milk.png" alt="Goat Milk")
-          .column.is-4-mobile: div.ico: img(src="app/img/ico-goat.png" alt="Goat Milk")
-          .column.is-4-mobile: div.ico: img(src="app/img/ico-pills.png" alt="Goat Milk")
-          .column.is-6-mobile: div.ico: img(src="app/img/ico-drop.png" alt="Goat Milk")
-          .column.is-6-mobile: div.ico: img(src="app/img/ico-dna.png" alt="Goat Milk")
-      .section.container
+          .column.is-4-mobile: div.ico.active(data="#txt1"): img(src="app/img/ico-milk.png" alt="Goat Milk")
+          .column.is-4-mobile: div.ico(data="#txt2"): img(src="app/img/ico-goat.png" alt="Goat Milk")
+          .column.is-4-mobile: div.ico(data="#txt3"): img(src="app/img/ico-pills.png" alt="Goat Milk")
+          .column.is-6-mobile: div.ico(data="#txt4"): img(src="app/img/ico-drop.png" alt="Goat Milk")
+          .column.is-6-mobile: div.ico(data="#txt5"): img(src="app/img/ico-dna.png" alt="Goat Milk")
+      .container
         .columns.is-centered: .column.is-7.has-text-centered
-          p Esta comprobado que la leche de cabra es uno de los líquidos de la naturaleza con más vitaminas y proteínas que hidratan la piel.
-    
-    section.section#todas-las-edades.animated.fadeIn
+          p.is-size-4#txt1.txts Esta comprobado que la leche de cabra es uno de los líquidos provenientes de la naturaleza con #[strong más vitaminas y proteínas que hidratan la piel].
+
+          p.is-size-4#txt2.txts Los componentes de la leche de cabra hidratan porque #[strong aportan la cantidad de agua y ciertas vitaminas que nuestra piel necesita] para sus funciones metabólicas, además de que actúa en sus capas más profundas.
+          
+          p.is-size-4#txt3.txts La leche de cabra es rica en vitaminas C y B. La Vitamina B favorece la respitación celular, por tanto es un regulador de la seborrea y favorece la disolución de la grasa de la piel. #[strong La Vitamina C es un activador de la síntesis de colágeno y favorece el buen mantenimiento de la piel].
+
+          p.is-size-4#txt4.txts A medida que envejecemos nuestra piel va perdiendo firmeza y elasticidad, #[strong el colágeno es el encargado de aportar a nuestros tejidos estas propiedades], por lo que aumentar su producción es tan importante para lucir una piel hermosa y en buen estado.
+
+          p.is-size-4#txt5.txts Contiene también ácido linolénico que ayuda a #[strong combatir la sequedad cutánea].
+
+
+
+    section.section#todas-las-edades
       .container
         .columns
           .column.is-4.has-text-justified
             h2 NATURE MOMENTS GOAT MILK
             h3 ADECUADO PARA TODAS LAS EDADES
-            p NATURE MOMENTS GOAT MILK es una línea de productos para toda la familia, sus formulas e ingredientres son adecuados para todas las edades.
-            p Se recomienta para pieles con eczema, psoriasis o piel seca y con picazón.
-            p A diferencias de leches provenientes de otros animales la leche de cabra tiene un PH similar al de los seres humanos por lo que es absorbido por la piel con menos irritación.
-          .column.has-text-right
+            p NATURE MOMENTS GOAT MILK es una línea de productos para toda la familia, sus fórmulas de ingredientes son adecuados para todas las edades.
+            p Ayuda y da confort a pieles con eczema, psoriasis o piel seca y con picazón.
+            p A diferencias de leches provenientes de otros animales la leche de cabra tiene un PH similar al del ser humano por lo que se absorbe en minutos dejando una textura suave en tu piel.
+          .column.has-text-right(data-aos="fade-left" data-aos-anchor-placement="top-bottom")
             img(src="app/img/goat-mlik-nature.jpg" alt="Para todas las edades")
     
-    section.section#body-lotion.animated.fadeIn
+    section.section#body-lotion
       .container
         .columns
-          .column.is-6.is-4-tablet.has-text-centered
+          .column.is-6.is-4-tablet.has-text-centered(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
             img(src="app/img/goat-mik-nature-moments.jpg" alt="Ultra Hydrating Body Lotion")
           .column.is-5.has-text-justified
             h2 #[strong ULTRA #[br] HYDRATING] #[br] BODY LOTION
@@ -66,6 +76,6 @@ html(lang="es")
 
 
     
-    +footer
+    //+footer
     
     +scripts

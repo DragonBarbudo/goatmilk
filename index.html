@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="stylesheet" href="//unpkg.com/aos@2.3.1/dist/aos.css"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,500,700"/>
     <link rel="stylesheet" href="app/app.css"/>
     <title>GOAT MILK</title>
@@ -16,26 +17,26 @@
     <div class="topbar">
       <div class="container">
         <div class="level">
-          <div class="level-left animated fadeInLeft">
+          <div class="level-left" data-aos="fade-right" data-aos-duration="600">
             <div class="level-item has-text-centered"><img src="app/img/goat-milk.png" alt="Goat Milk"/></div>
           </div>
-          <div class="level-right"><a class="level-item" href="#inicio">GOAT MILK</a><a class="level-item" href="#nature-moments">NATURE MOMENTS</a></div>
+          <div class="level-right"><a class="level-item" href="#body-lotion">GOAT MILK</a><a class="level-item" href="#nature-moments">NATURE MOMENTS</a></div>
         </div>
       </div>
     </div>
-    <section class="animated fadeIn" id="inicio">
+    <section id="inicio" data-aos="zoom-in" data-aos-duration="1400">
       <div class="container">
         <div class="columns">
-          <div class="column is-4 is-offset-1 is-6-mobile animated fadeInLeft">
+          <div class="column is-4 is-offset-1 is-6-mobile" data-aos="fade-right" data-aos-duration="600" data-aos-delay="800">
             <p class="section is-size-5 introtxt">LA LECHE DE CABRA ES EL INGREDIENTE IDEAL PARA CUIDAR LA <strong>BELLEZA DE TU PIEL</strong></p>
           </div>
         </div>
         <div class="columns">
-          <div class="column is-8 animated fadeInRight"><img class="bodylotion" src="app/img/goat-milk-lotion.png" alt="Ultra Hydrating Body Lotion"></div>
+          <div class="column is-8" data-aos="fade-left" data-aos-duration="600" data-aos-delay="800"><img class="bodylotion" src="app/img/goat-milk-lotion.png" alt="Ultra Hydrating Body Lotion"></div>
         </div>
       </div>
     </section>
-    <section class="animated fadeIn" id="nature-moments">
+    <section id="nature-moments" data-aos="zoom-in" data-aos-duration="800">
       <div class="container">
         <div class="columns">
           <div class="column has-text-centered">
@@ -47,48 +48,52 @@
       <div class="section container">
         <div class="columns has-text-centered is-mobile is-multiline">
           <div class="column is-4-mobile">
-            <div class="ico"><img src="app/img/ico-milk.png" alt="Goat Milk"></div>
+            <div class="ico active" data="#txt1"><img src="app/img/ico-milk.png" alt="Goat Milk"></div>
           </div>
           <div class="column is-4-mobile">
-            <div class="ico"><img src="app/img/ico-goat.png" alt="Goat Milk"></div>
+            <div class="ico" data="#txt2"><img src="app/img/ico-goat.png" alt="Goat Milk"></div>
           </div>
           <div class="column is-4-mobile">
-            <div class="ico"><img src="app/img/ico-pills.png" alt="Goat Milk"></div>
+            <div class="ico" data="#txt3"><img src="app/img/ico-pills.png" alt="Goat Milk"></div>
           </div>
           <div class="column is-6-mobile">
-            <div class="ico"><img src="app/img/ico-drop.png" alt="Goat Milk"></div>
+            <div class="ico" data="#txt4"><img src="app/img/ico-drop.png" alt="Goat Milk"></div>
           </div>
           <div class="column is-6-mobile">
-            <div class="ico"><img src="app/img/ico-dna.png" alt="Goat Milk"></div>
+            <div class="ico" data="#txt5"><img src="app/img/ico-dna.png" alt="Goat Milk"></div>
           </div>
         </div>
       </div>
-      <div class="section container">
+      <div class="container">
         <div class="columns is-centered">
           <div class="column is-7 has-text-centered">
-            <p>Esta comprobado que la leche de cabra es uno de los líquidos de la naturaleza con más vitaminas y proteínas que hidratan la piel.</p>
+            <p class="is-size-4 txts" id="txt1">Esta comprobado que la leche de cabra es uno de los líquidos provenientes de la naturaleza con <strong>más vitaminas y proteínas que hidratan la piel</strong>.</p>
+            <p class="is-size-4 txts" id="txt2">Los componentes de la leche de cabra hidratan porque <strong>aportan la cantidad de agua y ciertas vitaminas que nuestra piel necesita</strong> para sus funciones metabólicas, además de que actúa en sus capas más profundas.</p>
+            <p class="is-size-4 txts" id="txt3">La leche de cabra es rica en vitaminas C y B. La Vitamina B favorece la respitación celular, por tanto es un regulador de la seborrea y favorece la disolución de la grasa de la piel. <strong>La Vitamina C es un activador de la síntesis de colágeno y favorece el buen mantenimiento de la piel</strong>.</p>
+            <p class="is-size-4 txts" id="txt4">A medida que envejecemos nuestra piel va perdiendo firmeza y elasticidad, <strong>el colágeno es el encargado de aportar a nuestros tejidos estas propiedades</strong>, por lo que aumentar su producción es tan importante para lucir una piel hermosa y en buen estado.</p>
+            <p class="is-size-4 txts" id="txt5">Contiene también ácido linolénico que ayuda a <strong>combatir la sequedad cutánea</strong>.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="section animated fadeIn" id="todas-las-edades">
+    <section class="section" id="todas-las-edades">
       <div class="container">
         <div class="columns">
           <div class="column is-4 has-text-justified">
             <h2>NATURE MOMENTS GOAT MILK</h2>
             <h3>ADECUADO PARA TODAS LAS EDADES</h3>
-            <p>NATURE MOMENTS GOAT MILK es una línea de productos para toda la familia, sus formulas e ingredientres son adecuados para todas las edades.</p>
-            <p>Se recomienta para pieles con eczema, psoriasis o piel seca y con picazón.</p>
-            <p>A diferencias de leches provenientes de otros animales la leche de cabra tiene un PH similar al de los seres humanos por lo que es absorbido por la piel con menos irritación.</p>
+            <p>NATURE MOMENTS GOAT MILK es una línea de productos para toda la familia, sus fórmulas de ingredientes son adecuados para todas las edades.</p>
+            <p>Ayuda y da confort a pieles con eczema, psoriasis o piel seca y con picazón.</p>
+            <p>A diferencias de leches provenientes de otros animales la leche de cabra tiene un PH similar al del ser humano por lo que se absorbe en minutos dejando una textura suave en tu piel.</p>
           </div>
-          <div class="column has-text-right"><img src="app/img/goat-mlik-nature.jpg" alt="Para todas las edades"></div>
+          <div class="column has-text-right" data-aos="fade-left" data-aos-anchor-placement="top-bottom"><img src="app/img/goat-mlik-nature.jpg" alt="Para todas las edades"></div>
         </div>
       </div>
     </section>
-    <section class="section animated fadeIn" id="body-lotion">
+    <section class="section" id="body-lotion">
       <div class="container">
         <div class="columns">
-          <div class="column is-6 is-4-tablet has-text-centered"><img src="app/img/goat-mik-nature-moments.jpg" alt="Ultra Hydrating Body Lotion"></div>
+          <div class="column is-6 is-4-tablet has-text-centered" data-aos="fade-right" data-aos-anchor-placement="top-bottom"><img src="app/img/goat-mik-nature-moments.jpg" alt="Ultra Hydrating Body Lotion"></div>
           <div class="column is-5 has-text-justified">
             <h2><strong>ULTRA <br> HYDRATING</strong> <br> BODY LOTION</h2>
             <h3>Fórmula rica en leche de cabra y aceite escencial de verbena y limón.</h3>
@@ -111,16 +116,11 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="section container">
-        <div class="columns">
-          <div class="column"><a href="#">Términos y condiciones</a> | <a href="#">Contáctanos</a> | <a href="#">About</a></div>
-        </div>
-      </div>
-    </footer>
+    <!--+footer-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+    <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app/app.js"></script>
   </body>
 </html>

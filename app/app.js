@@ -1,25 +1,33 @@
 /*eslint-env jquery*/
 
-
+AOS.init();
 
 
 $(document).ready(function(){
 
+    $('.txts:not(#txt1)').hide();
+    $('.ico').click(function(){
+      $('.txts').slideUp();
+      $( $(this).attr('data') ).slideDown();
+      $('.ico.active').removeClass('active');
+      $(this).addClass('active');
+      
+    });
 
   $('.navbar-burger').click(function(){
     $(this).toggleClass('is-active');
     $( '#menu' ).toggleClass('is-active');
   });
 /* MENUSCROLL */
+
   $('a[href^="#"]').each(function(){
     var url = this.hash;
     $(this).on('click', function (e) {
+      console.log('click');
       e.preventDefault();
-      $( '#menu' ).removeClass('is-active');
-      $('a.is-active').removeClass('is-active');
       $('html,body').animate({
-        'scrollTop':$(url).offset().top-$('.navbar').height()
-      }, 400, 'swing');
+        'scrollTop':$(url).offset().top-$('.topbar').height()
+      }, 1000, 'swing');
     });
 
     $(url).waypoint({
@@ -48,11 +56,9 @@ $(document).ready(function(){
 
   $('.modal-close').click(function(){
     $(this).closest('.modal').removeClass('is-active');
-    $('.carousel').slick('unslick');
   });
 
 
-  $('.slider').slick({ });
 
 
   $(".navbar").sticky({topSpacing:0});

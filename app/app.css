@@ -61,6 +61,9 @@ body {
 #inicio .bodylotion {
   margin-left: -40px;
 }
+#nature-moments {
+  padding-top: 80px;
+}
 #nature-moments h2 {
   font-weight: bold;
   font-size: 1.4rem;
@@ -78,6 +81,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+#nature-moments .ico.active {
+  background: #dfdfdf;
+}
+#nature-moments .ico:hover:after {
+  transform: scale(1);
+  transition: all .5s;
+}
+#nature-moments .ico:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dfdfdf;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all .2s;
+}
+#todas-las-edades {
+  padding-top: 120px;
+  padding-top: 200px;
 }
 #todas-las-edades h2 {
   font-weight: bold;
@@ -90,6 +116,11 @@ body {
 #todas-las-edades p {
   font-weight: 400;
   margin: 20px 0;
+}
+#body-lotion {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 #body-lotion h2 {
   font-weight: 400;

@@ -5,9 +5,9 @@ mixin head
   link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css")
   link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
   link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+  link(rel="stylesheet", href="//unpkg.com/aos@2.3.1/dist/aos.css")
   link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Montserrat:400,500,700")
   link(rel="stylesheet" href="app/app.css")
-    
     
     
 
@@ -15,6 +15,7 @@ mixin scripts
   script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
   script(src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js")
   script(src="//cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js")
+  script(src="//unpkg.com/aos@2.3.1/dist/aos.js")
   script(src="app/app.js")
 
 
@@ -22,11 +23,11 @@ mixin scripts
 
 mixin topbar
   .topbar: .container: .level
-    .level-left.animated.fadeInLeft
+    .level-left(data-aos="fade-right" data-aos-duration="600")
       .level-item.has-text-centered
         img(src="app/img/goat-milk.png" alt="Goat Milk")
     .level-right
-      a(href="#inicio").level-item GOAT MILK
+      a(href="#body-lotion").level-item GOAT MILK
       a(href="#nature-moments").level-item NATURE MOMENTS
 
 

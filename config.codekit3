@@ -42,6 +42,16 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/app\/app-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/app-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/app\/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -196,12 +206,23 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/CPANEL": {
+	"\/CNAME": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/CPANEL",
+		"oAP": "\/CNAME",
 		"oF": 0
+		},
+	"\/favicon.png": {
+		"ft": 32768,
+		"iS": 1317,
+		"oA": 0,
+		"oAP": "\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/index.html": {
 		"cB": 0,
