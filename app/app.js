@@ -26,7 +26,7 @@ $(document).ready(function(){
       console.log('click');
       e.preventDefault();
       $('html,body').animate({
-        'scrollTop':$(url).offset().top-$('.topbar').height()
+        'scrollTop':$(url).offset().top-120
       }, 1000, 'swing');
     });
 
